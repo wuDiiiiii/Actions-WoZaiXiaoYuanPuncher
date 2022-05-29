@@ -163,6 +163,7 @@ class WoZaiXiaoYuanPuncher:
         }
         data = urlencode(sign_data)
         self.session = requests.session()
+        print(data)
         response = self.session.post(url=url, data=data, headers=self.header)
         response = json.loads(response.text)
         # 打卡情况
