@@ -121,9 +121,9 @@ class WoZaiXiaoYuanPuncher:
                         self.status_code = 2
                         print("已经打过卡了")
             # 如果当前时间不在任何一个打卡时段内
-#             if inSeq == False:
-#                 self.status_code = 3
-#                 print("打卡失败：不在打卡时间段内")
+            if inSeq == False:
+                self.status_code = 3
+                print("打卡失败：不在打卡时间段内")
 
     # 执行打卡
     # 参数seq ： 当前打卡的序号
